@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Berita - Tugas 2 HTML</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      header,
+      footer {
+        text-align: center;
+      }
+      article {
+        margin-bottom: 30px;
+      }
+      img {
+        max-width: 1000px;
+        height: 400px;
+      }
+      .selengkapnya {
+        display: none;
+        margin-top: 10px;
+      }
+      button {
+        margin-top: 10px;
+        padding: 5px 10px;
+      }
+      .data-berita span {
+        margin-right: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="images/Itera.png" alt="Logo Itera" width="200" height="200" />
+      <h1>Portal Berita ITERA</h1>
+      <p>Berita terkini seputar kampus</p>
+      <hr />
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+      <a href="#akademik">Akademik</a> |
+      <a href="#non-akademik">Non-Akademik</a>
+    </nav>
+    <hr />
+
+    <!-- Konten Berita -->
+    <main>
+      <!-- Berita 1 -->
+      <article id="akademik">
+        <div class="data-berita">
+          <span><i class="fa fa-user"></i> Humas Itera - </span>
+          <span><i class="fa fa-clock"></i> September 12, 2025</span>
+          <span><i class="fa fa-folder"></i> Berita</span>
+        </div>
+        <br />
+        <img src="images/berita1.jpg" alt="Foto Seminar Kesehatan Mental" />
+        <h2>
+          Itera dan RS Airan Raya Gelar Seminar Kesehatan Mental, Lantik 70
+          Pengurus Kelas TPB
+        </h2>
+
+        <button onclick="toggleBerita('berita1')">Baca Selengkapnya</button>
+        <div id="berita1" class="selengkapnya">
+          <p>
+            Institut Teknologi Sumatera (Itera) bekerja sama dengan Rumah Sakit
+            Airan Raya menggelar seminar edukasi bertajuk “Kesehatan Mental
+            Sebagai Kunci Keberhasilan Belajar”, sekaligus melantik 70 pengurus
+            kelas Tahap Persiapan Bersama (TPB) angkatan 2025, di Aula GKU 1
+            Itera, pada tanggak 11 September 2025.Kegiatan ini bertujuan untuk
+            meningkatkan kesadaran, pemahaman, dan keterampilan mahasiswa serta
+            masyarakat dalam menjaga kesehatan jiwa. Seminar menghadirkan
+            narasumber Ns. Dwiyantoro, S.Kep., M.Kep., Sp.Kep.J., seorang pakar
+            keperawatan jiwa yang berpengalaman dalam praktik klinis maupun
+            pendidikan kesehatan mental. Dalam paparannya, Dwiyantoro menegaskan
+            bahwa kesehatan mental sama pentingnya dengan kesehatan fisik,
+            terutama bagi generasi muda yang sedang menghadapi tantangan
+            akademik, sosial, dan personal.Kegiatan dibuka secara resmi oleh
+            Ketua Pusat Implementasi Inovasi, Lembaga Penjaminan Mutu dan
+            Pengembangan Pembelajaran (LPMPP) Itera, Dr. Handoyo, S.Si., M.T.
+            Dalam sambutannya, ia menekankan pentingnya sinergi antara perguruan
+            tinggi dan fasilitas layanan kesehatan dalam memberikan kontribusi
+            nyata bagi masyarakat. 
+            <br>
+            <strong>
+              “Menjaga kesehatan mental bukan hanya soal menghindari 
+            gangguan jiwa, tetapi juga bagaimana kita mampu mengelola stres, membangun hubungan 
+            yang sehat, dan mengembangkan potensi diri secara optimal,” ujar Ns. Dwiyantoro.
+            </strong>
+          </p>
+        </div>
+      </article>
+      <hr />
+
+      <!-- Berita 2 -->
+      <article id="non-akademik">
+        <div class="data-berita">
+          <span><i class="fa fa-user"></i>Rudi - </span>
+          <span><i class="fa fa-clock"></i> Agustus 21, 2025</span>
+          <span><i class="fa fa-folder"></i> Berita</span>
+        </div>
+        <br>
+
+        <img src="images/berita2.jpg" alt="Foto Konser Idgitaf" />
+        <h2>
+          Kemeriahan Konser Idgitaf Tutup Rangkaian Program Pengenalan
+          Lingkungan Kampus Itera
+        </h2>
+
+        <button onclick="toggleBerita('berita2')">Baca Selengkapnya</button>
+        <div id="berita2" class="selengkapnya">
+          <p>
+            Suasana malam di kampus Institut Teknologi Sumatera (Itera) yang biasa lengang, mendadak menjadi ramai. 
+            Kemeriahan panggung konser dengan gemerlap lampu sorot berdiri di sekitar Bundaran Gedung Laboratorium OZT Itera, 
+            menjadi pusat keramaian. Ribuan mahasiswa baru Itera kompak bernyanyi lagu Satu-satu, yang dikomandoi langsung sang 
+            penyanyi Brigitta Sriulina Br Meliala, atau akrab dikenal Idgitaf. Konser Jumat, 15 Agustus 2025, malam itu, menjadi penutup 
+            rangkaian Program Pengenalan Lingkungan Kampus (PPLK) bagi mahasiswa baru, yang telah berlangsung selama hampir sepekan. Penyanyi 
+            yang pernah meraih “Best of Performance” dari TikTok Awards Indonesia 2020, tersebut menjadi bintang tamu, dan membawakan beberapa 
+            lagu mulai dari Terpikat, Takut, hingga Berakhir di Aku. 
+            <br>
+            <strong>
+              Penyanyi yang pernah meraih “Best of Performance” dari TikTok Awards Indonesia 2020, 
+              tersebut menjadi bintang tamu, dan membawakan beberapa lagu mulai dari Terpikat, 
+              Takut, hingga Berakhir di Aku.
+            </strong> 
+        </div>
+      </article>
+      <hr />
+      
+      <!-- Berita 3 -->
+      <article id="akademik">
+        <div class="data-berita">
+          <span><i class="fa fa-user"></i>Rudi - </span>
+          <span><i class="fa fa-clock"></i> Agustus 16, 2025</span>
+          <span><i class="fa fa-folder"></i> Berita</span>
+        </div>
+        <br>
+
+        <img src="images/berita3.jpg" alt="Foto Workshop Transfer Teknologi" />
+        <h2>
+          Dukung Program Kampus Berdampak, Pusat Implementasi Inovasi LPMPP Itera Gelar Workshop Transfer Teknologi
+        </h2>
+
+        <button onclick="toggleBerita('berita3')">Baca Selengkapnya</button>
+        <div id="berita3" class="selengkapnya">
+          <p>
+            Pusat Implementasi Inovasi, Lembaga Penjaminan Mutu dan Pengembangan Pembelajaran (LPMPP) Institut 
+            Teknologi Sumatera (Itera) mengadakan Workshop Transfer Teknologi, di Aula Gedung Training Center Itera, 
+            21-22 Agustus 2025. Kegiatan yang diharapkan mendukung kampus berdampak melalui penerapan riset dan inovasi 
+            tersebut menghadirkan narasumber Asisten Direktur Lembaga Pengembangan Inovasi dan Kewirausahaan (LPIK) ITB, 
+            Prof. Ir. Arif Sasongko, S.T.,M.T.,Ph.D., dan Asisten Transfer Teknologi Direktorat Kawasan Sains dan Teknologi  
+            ITB , Ikhsan Prasetyo,S.T.,M.T. Kepala LPMPP Itera Handoyo,S.Si.,M.T.Ph.D., dalam sambutannya, menyampaikan peningkatan 
+            jumlah hak paten merupakan salah satu program strategis Rektor Itera Prof.Dr. I Nyoman Pugeg Aryanta. Hal tersebut menjadi 
+            komitmen Itera, agar hasil riset dan inovasi yang dilakukan oleh dosen dan mahasiswa dapat digunakan oleh dunia industri dan 
+            masyarakat.
+            <br>
+            <strong>
+              "Workshop ini diharapkan dapat memberikan pemahaman yang lebih mendalam tentang proses transfer teknologi, 
+              mulai dari identifikasi potensi inovasi, perlindungan hak kekayaan intelektual, hingga strategi komersialisasi," 
+              ujar Handoyo.
+            </strong>
+            
+          </p>
+        </div>
+      </article>
+      <hr />
+
+
+    <!-- Footer -->
+    <footer>
+      <hr />
+      <p>&copy; 2025 Portal Berita ITERA | Tugas 2 HTML</p>
+    </footer>
+
+    <!-- Script untuk toggle -->
+    <script>
+      function toggleBerita(id) {
+        var berita = document.getElementById(id);
+        if (berita.style.display === "none" || berita.style.display === "") {
+          berita.style.display = "block";
+        } else {
+          berita.style.display = "none";
+        }
+      }
+
+    </script>
+  </body>
+</html>
